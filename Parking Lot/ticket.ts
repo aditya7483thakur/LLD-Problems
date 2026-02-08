@@ -1,0 +1,11 @@
+import { ParkingSpot } from "./parkingspot";
+import { Vehicle } from "./vehicle";
+
+export class Ticket {
+  constructor(
+    public readonly ticketId: string,
+    public readonly vehicle: Vehicle,
+    public readonly parkingSpot: ParkingSpot,
+    public readonly entryTime: Date,
+  ) {}
+}
